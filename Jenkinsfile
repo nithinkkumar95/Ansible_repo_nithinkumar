@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'slave01' }
+    agent { label 'server2' }
     stages {
         stage('Grafana Installation') {
             steps {
