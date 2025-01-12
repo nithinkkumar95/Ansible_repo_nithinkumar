@@ -1,5 +1,6 @@
 pipeline {
     agent { label 'server1' }
+    stages {
         stage('Prometheus Installation') {
             steps {
                 sh '''
@@ -9,3 +10,4 @@ pipeline {
             }
         }
     }
+}
